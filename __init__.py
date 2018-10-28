@@ -23,7 +23,7 @@ app = Flask(__name__)
 
 # Google client_id
 CLIENT_ID = json.loads(
-    open('/var/www/catalog/catalog/client_secret.json', 'r').read())['web']['client_id']
+    open('/var/www/itemsCatalog/itemsCatalog/client_secret.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = "Restaurant Menu Application"
 
 # Connect to database
