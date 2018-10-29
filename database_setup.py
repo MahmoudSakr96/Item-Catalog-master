@@ -59,7 +59,7 @@ class MenuItem(Base):
         }
 
 
-engine = create_engine('postgresql://kareem:myPassword@localhost/itemsCatalog')
+engine = create_engine('postgresql://kareem:123456@localhost/itemsCatalog')
 
 
 Base.metadata.create_all(engine)
