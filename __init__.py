@@ -27,7 +27,7 @@ CLIENT_ID = json.loads(
 APPLICATION_NAME = "Restaurant Menu Application"
 
 # Connect to database
-engine = create_engine('postgresql://kareem:123456@localhost/itemsCatalog')
+engine = create_engine('postgresql://kareem:123456@localhost/itemscatalog')
 Base.metadata.bind = engine
 
 # Create anti-forgery state token
