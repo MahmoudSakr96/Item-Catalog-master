@@ -23,11 +23,11 @@ app = Flask(__name__)
 
 # Google client_id
 CLIENT_ID = json.loads(
-    open('/var/www/ItemCatalog/ItemCatalog/client_secret.json', 'r').read())['web']['client_id']
+    open('/var/www/catalog/catalog/client_secret.json', 'r').read())['web']['client_id']
 APPLICATION_NAME = "Restaurant Menu Application"
 
 # Connect to database
-engine = create_engine('postgresql://kareem:123456@localhost/itemscatalog')
+engine = create_engine('postgresql://catalog:password@localhost/catalog')
 Base.metadata.bind = engine
 
 # Create anti-forgery state token
